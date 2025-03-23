@@ -85,7 +85,7 @@ services:
       - MYSQL_PASSWORD=passwd25
     command: >
       sh -c "chmod +x /app/wait-for-it.sh &&
-         /app/wait-for-it.sh mysql:3306 --timeout=20 --strict -- 
+         /app/wait-for-it.sh mysql:3306 --timeout=40 --strict -- 
          python manage.py migrate &&
          python manage.py runserver 0.0.0.0:8000"
 
