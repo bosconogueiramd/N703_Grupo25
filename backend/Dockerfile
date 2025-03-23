@@ -18,4 +18,5 @@ RUN chmod +x /app/wait-for-it.sh
 CMD ["dos2unix /app/wait-for-it.sh"]
 CMD ["chmod +x /app/wait-for-it.sh"]
 
+# Startando o container com scrypt que aguarda o container do mysql subir primeiro.
 CMD ["sh", "-c", "/app/wait-for-it.sh mysql:3306 --strict --timeout=20 -- python manage.py migrate && python manage.py runserver 0.0.0.0:8000"]
