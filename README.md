@@ -37,14 +37,6 @@ cd N703_Grupo25
 ```
 
 ### **3. Configurar o Ambiente Docker**
-- Crie um arquivo `.env` com as variáveis de ambiente:
-```env
-MYSQL_USER=root
-MYSQL_PASSWORD=password
-MYSQL_DB=visita_guiada
-RABBITMQ_DEFAULT_USER=guest
-RABBITMQ_DEFAULT_PASS=guest
-```
 - Subir os contêineres com Docker Compose:
 ```bash
 docker-compose up --build
@@ -64,7 +56,7 @@ docker-compose down
 
 ---
 
-## 🛠️ Ferramentas Utilizadas
+## 🛠️ Tecnologias utilizadas
 - Django (Python)
 - Node.js
 - React.js
